@@ -22,7 +22,7 @@ int main()
   face = north;
   ifstream fin;
   ofstream fout;
-  fin.open("SampleInput.txt");
+  fin.open("ActualInput.txt");
   fout.open("Output.txt");
   while(!fin.eof())
   {
