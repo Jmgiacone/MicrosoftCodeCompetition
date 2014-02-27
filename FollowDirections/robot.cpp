@@ -21,7 +21,9 @@ int main()
   string order;
   face = north;
   ifstream fin;
+  ofstream fout;
   fin.open("SampleInput.txt");
+  fout.open("Output.txt");
   while(!fin.eof())
   {
     fin >> order;
@@ -43,6 +45,8 @@ int main()
   finalNorth = steps[north] - steps[south];
   finalEast = steps[east] - steps[west];
   cout << finalNorth << " , " << finalEast << endl;
+  fout << finalNorth << " , " << finalEast << endl;
+  fout.close();
   fin.close();
   return 0;
 
